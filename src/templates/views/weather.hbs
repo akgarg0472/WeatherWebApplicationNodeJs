@@ -9,5 +9,15 @@
 </head>
 <body>
     {{>navbar}}
+
+    {{!-- weather page UI --}}
+    
+    <div class="weather__container">
+    <input type="text" name="search" id="search_input" placeholder="Enter city">    
+    <br><br>
+    <button onclick="fetchWeatherData()" id="submit_btn"  type="button">Get Data</button>
+</div>
+
+    <script src="./js/main.js"></script>
 </body>
 </html>

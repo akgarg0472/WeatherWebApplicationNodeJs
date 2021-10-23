@@ -156,3 +156,34 @@ footer {
 .error_container p .error_url {
   font-weight: 600;
 }
+
+/*  */
+/*  */
+/* Weather page styling */
+/*  */
+/*  */
+.weather__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+}
+
+#search_input {
+  width: 16rem;
+  height: 3.6rem;
+  padding-left: 4px;
+  font-size: 1.4rem;
+}
+
+#submit_btn {
+  width: 12rem;
+  height: 2.8rem;
+  border: none;
+  font-size: 1.4rem;
+  font-weight: 500;
+  background-color: red;
+  color: #fff;
+  border-radius: 4px;
+}
