@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Piazzolla:wght@200;300;400;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Piazzolla", serif;
+}
+
+:root {
+  --main-bg: #1e272e;
+  --main-color: #0097e6;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  margin: 0;
+}
+
+.main_menu {
+  background-color: var(--main-bg);
+}
+
+.navbar {
+  color: #fff;
+  background-color: var(--main-bg);
+  padding: 2rem 0;
+}
+
+.navbar a {
+  color: #fff;
+  font-size: 1.8rem;
+}
+
+.navbar a:hover {
+  color: var(--main-color);
+}
+
+.navbar-toggler {
+  background-color: grey;
+}
+
+.navbar li {
+  margin-left: 2rem;
+}
+
+.fa-snowflake {
+  color: var(--main-color);
+  animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* main header */
+.main_header_left,
+.main_header_right {
+  height: 70rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.main_header_left p {
+  font-size: 2rem;
+}
+
+.main_header_left h1 {
+  font-size: 4rem;
+  margin: 1rem 0 4rem 0;
+  text-transform: capitalize;
+}
+
+.main_header_left button {
+  border: none;
+  outline: none;
+  padding: 0.8rem 1.8rem;
+  font-size: 1.4rem;
+  border-radius: 2rem;
+  text-transform: uppercase;
+  box-shadow: 0 8px 6px -6px #000;
+}
+
+.main_header_left button:hover {
+  box-shadow: 0 8px 6px -6px var(--main-color);
+}
+
+/* footer styling */
+footer {
+  width: 100%;
+  background-color: var(--main-bg);
+  text-align: center;
+  color: #fff;
+  line-height: 8rem;
+  font-size: 1.4rem;
+  margin-top: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .main_header_left {
+    height: auto;
+    margin: 5rem 0;
+  }
+
+  .main_header_right {
+    height: auto;
+    margin-top: auto;
+  }
+
+  footer {
+    margin-top: 2rem;
+  }
+}
+
+/*  */
+/*  */
+/*  */
+/* Error 404 page styling */
+/*  */
+/*  */
+.error_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.error_container h1 {
+  color: #0097e6;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 8rem;
+}
+.error_container p {
+  color: #1e272e;
+  font-size: 2.4rem;
+}
+
+.error_container p .error_url {
+  font-weight: 600;
+}
